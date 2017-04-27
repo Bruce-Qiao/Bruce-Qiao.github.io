@@ -6,7 +6,7 @@
   <title>简单实现产品页面浏览次数统计功能 | 绿茶的自由之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在销售网站发布了新产品后，我们都希望了解用户对于新产品的感兴趣程度。除了添加收藏功能之外，还有一个方法是统计浏览该产品页面的次数。全栈营编程比赛的页面就有这一功能：​​​用google搜了一下解决方案，大部分都是要用到”impressionist”这个gem。这种方法功能强大（可以按照不同id统计），但实现起来比较麻烦。​在搜索结果中找到了一种简单的解决方案，只需要简单几步就可以实现：​ 一、给p">
-<meta name="keywords">
+<meta name="keywords" content="技巧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简单实现产品页面浏览次数统计功能">
 <meta property="og:url" content="http://yoursite.com/2017/04/23/add_pageview_function/index.html">
@@ -14,7 +14,7 @@
 <meta property="og:description" content="在销售网站发布了新产品后，我们都希望了解用户对于新产品的感兴趣程度。除了添加收藏功能之外，还有一个方法是统计浏览该产品页面的次数。全栈营编程比赛的页面就有这一功能：​​​用google搜了一下解决方案，大部分都是要用到”impressionist”这个gem。这种方法功能强大（可以按照不同id统计），但实现起来比较麻烦。​在搜索结果中找到了一种简单的解决方案，只需要简单几步就可以实现：​ 一、给p">
 <meta property="og:image" content="http://user-image.logdown.io/user/22238/blog/21249/post/1510967/8aTzay8uT1GGsghuJx81_views%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0.png">
 <meta property="og:image" content="http://user-image.logdown.io/user/22238/blog/21249/post/1510967/MtHCAsxQZ6jxKOsvo8WG_views%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B01.png">
-<meta property="og:updated_time" content="2017-04-23T13:10:43.000Z">
+<meta property="og:updated_time" content="2017-04-24T13:36:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单实现产品页面浏览次数统计功能">
 <meta name="twitter:description" content="在销售网站发布了新产品后，我们都希望了解用户对于新产品的感兴趣程度。除了添加收藏功能之外，还有一个方法是统计浏览该产品页面的次数。全栈营编程比赛的页面就有这一功能：​​​用google搜了一下解决方案，大部分都是要用到”impressionist”这个gem。这种方法功能强大（可以按照不同id统计），但实现起来比较麻烦。​在搜索结果中找到了一种简单的解决方案，只需要简单几步就可以实现：​ 一、给p">
@@ -77,6 +77,10 @@
   <time datetime="2017-04-23T12:59:12.000Z" itemprop="datePublished">2017-04-23</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -95,8 +99,8 @@
       
         <p>在销售网站发布了新产品后，我们都希望了解用户对于新产品的感兴趣程度。除了添加收藏功能之外，还有一个方法是统计浏览该产品页面的次数。全栈营编程比赛的页面就有这一功能：<br>​<br>​<br><img src="http://user-image.logdown.io/user/22238/blog/21249/post/1510967/8aTzay8uT1GGsghuJx81_views%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0.png" alt="views功能实现.png"><br>​<br>用google搜了一下解决方案，大部分都是要用到”impressionist”这个gem。这种方法功能强大（可以按照不同id统计），但实现起来比较麻烦。<br>​<br>在搜索结果中找到了一种简单的解决方案，只需要简单几步就可以实现：<br>​</p>
 <h2 id="一、给product新增一个views的栏位"><a href="#一、给product新增一个views的栏位" class="headerlink" title="一、给product新增一个views的栏位"></a>一、给product新增一个views的栏位</h2><ol>
-<li><code>rails g migration add_views_to_product</code></li>
-<li><figure class="highlight ruby"><figcaption><span>db/migrate/XXXXXXXX_add_views_to_product</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">change</span></span></div><div class="line">    add_column <span class="symbol">:products</span>, <span class="symbol">:views</span>, <span class="symbol">:integer</span></div><div class="line">  <span class="keyword">end</span></div><div class="line">...</div></pre></td></tr></table></figure>
+<li><p><code>rails g migration add_views_to_product</code><br>2.</p>
+<figure class="highlight ruby"><figcaption><span>db/migrate/XXXXXXXX_add_views_to_product</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">change</span></span></div><div class="line">    add_column <span class="symbol">:products</span>, <span class="symbol">:views</span>, <span class="symbol">:integer</span></div><div class="line">  <span class="keyword">end</span></div><div class="line">...</div></pre></td></tr></table></figure>
 </li>
 <li><p><code>rake db:migrate</code><br>​</p>
 <h2 id="二、在product-rb里定义一个increment的方法"><a href="#二、在product-rb里定义一个increment的方法" class="headerlink" title="二、在product.rb里定义一个increment的方法"></a>二、在product.rb里定义一个increment的方法</h2><figure class="highlight ruby"><figcaption><span>app/models/product.rb</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">increment</span><span class="params">(by = <span class="number">1</span>)</span></span></div><div class="line">  <span class="keyword">self</span>.views <span class="params">||</span>= <span class="number">0</span></div><div class="line">  <span class="keyword">self</span>.views += by</div><div class="line">  <span class="keyword">self</span>.save</div><div class="line"><span class="keyword">end</span></div><div class="line">...</div></pre></td></tr></table></figure>
@@ -111,9 +115,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/23/add_pageview_function/" data-id="cj1vv80do0001ed471c3xpunw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/04/23/add_pageview_function/" data-id="cj1w57zsc0000ch47hiu4oqp2" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技巧/">技巧</a></li></ul>
+
     </footer>
   </div>
   
@@ -130,6 +136,11 @@
     </a>
   
   
+    <a href="/2017/04/27/bug_and_debug/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">今天你的人生报错了吗？</div>
+    </a>
+  
 </nav>
 
   
@@ -141,12 +152,33 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/个人成长/">个人成长</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/投资/">投资</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/技巧/">技巧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程/">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读书笔记/">读书笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/黑客/">黑客</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/技巧/" style="font-size: 10px;">技巧</a> <a href="/tags/编程/" style="font-size: 10px;">编程</a> <a href="/tags/读书笔记/" style="font-size: 10px;">读书笔记</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -163,6 +195,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/04/27/bug_and_debug/">今天你的人生报错了吗？</a>
+          </li>
         
           <li>
             <a href="/2017/04/23/add_pageview_function/">简单实现产品页面浏览次数统计功能</a>
