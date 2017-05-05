@@ -241,6 +241,7 @@ body {
 .article-entry strong,
 .widget strong {
   font-weight: bold;
+  color: #ff0000;
 }
 .article-entry em,
 .widget em,
@@ -623,10 +624,13 @@ a.article-title:hover {
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.4em;
-  margin: 1.6em 20px;
-  text-align: center;
+  padding: 0 15px;
+  color: #666;
+  border-left: 4px solid #ddd;
+  /*font-family: Georgia, "Times New Roman", serif;*/
+  /*font-size: 1.4em;*/
+  /*margin: 1.6em 20px;*/
+  /*text-align: center;*/
 }
 .article-entry blockquote footer {
   font-size: 16px;
