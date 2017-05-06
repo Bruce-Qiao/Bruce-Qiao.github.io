@@ -5,13 +5,13 @@
   
   <title>用Inspect功能修正hexo排版错误 | 绿茶的自由之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作。顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看。 写作过程中发现hexo中对markdown语法的支持有些问题。例如实用引用语法的时候，在atom里模拟显示正常： 但在浏览器里却显示不正常： 反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的一篇文章的启发最终解决了这个问题">
+  <meta name="description" content="前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。 写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常： 但在浏览器里却显示有问题： 反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的一篇文章的启发最终解决了这个问">
 <meta name="keywords" content="hexo,markdown,debug">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Inspect功能修正hexo排版错误">
 <meta property="og:url" content="http://yoursite.com/2017/05/06/hexo_markdown_debug/index.html">
 <meta property="og:site_name" content="绿茶的自由之路">
-<meta property="og:description" content="前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作。顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看。 写作过程中发现hexo中对markdown语法的支持有些问题。例如实用引用语法的时候，在atom里模拟显示正常： 但在浏览器里却显示不正常： 反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的一篇文章的启发最终解决了这个问题">
+<meta property="og:description" content="前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。 写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常： 但在浏览器里却显示有问题： 反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的一篇文章的启发最终解决了这个问">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNbRwgy1ffbxk8vrx4j30or07mtb1.jpg">
 <meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNbRwgy1ffbxm76sxij31cg0k8n5i.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNbRwgy1ffbxyx1qu6j31dg0le114.jpg">
@@ -19,10 +19,10 @@
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNbRwgy1ffbyh7af8wj30te0fwjtp.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNbRwgy1ffbysx5bs8j30ns09qwfm.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNbRwgy1ffbz0qgu48j31kw0kgamd.jpg">
-<meta property="og:updated_time" content="2017-05-06T13:57:59.000Z">
+<meta property="og:updated_time" content="2017-05-06T14:16:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Inspect功能修正hexo排版错误">
-<meta name="twitter:description" content="前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作。顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看。 写作过程中发现hexo中对markdown语法的支持有些问题。例如实用引用语法的时候，在atom里模拟显示正常： 但在浏览器里却显示不正常： 反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的一篇文章的启发最终解决了这个问题">
+<meta name="twitter:description" content="前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。 写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常： 但在浏览器里却显示有问题： 反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的一篇文章的启发最终解决了这个问">
 <meta name="twitter:image" content="http://ww2.sinaimg.cn/large/006tNbRwgy1ffbxk8vrx4j30or07mtb1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="绿茶的自由之路" type="application/atom+xml">
@@ -102,9 +102,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前两周参考<a href="http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/" target="_blank" rel="external">笑来老师文章</a>用hexo建了一个静态博客站点，准备正式开始练习写作。顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看。</p>
-<p>写作过程中发现hexo中对markdown语法的支持有些问题。例如实用引用语法的时候，在atom里模拟显示正常：<br><img src="http://ww2.sinaimg.cn/large/006tNbRwgy1ffbxk8vrx4j30or07mtb1.jpg" alt=""></p>
-<p>但在浏览器里却显示不正常：<br><img src="http://ww4.sinaimg.cn/large/006tNbRwgy1ffbxm76sxij31cg0k8n5i.jpg" alt=""></p>
+        <p>前两周参考<a href="http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/" target="_blank" rel="external">笑来老师文章</a>用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。</p>
+<p>写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常：<br><img src="http://ww2.sinaimg.cn/large/006tNbRwgy1ffbxk8vrx4j30or07mtb1.jpg" alt=""></p>
+<p>但在浏览器里却显示有问题：<br><img src="http://ww4.sinaimg.cn/large/006tNbRwgy1ffbxm76sxij31cg0k8n5i.jpg" alt=""></p>
 <p>反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的<a href="http://lixiaolai.com/2016/06/25/makecs-html-css/" target="_blank" rel="external">一篇文章</a>的启发最终解决了这个问题。</p>
 <p>谷歌chrome浏览器的Inspect功能对于发现和修正html/css问题非常有效。以上面的问题为例：</p>
 <ol>
@@ -121,7 +121,7 @@
 </li>
 <li><p>把css文件内容拷贝下来，粘贴到自己有问题网页的对应css文件中，发现网页可以正确显示引用了（可以随便试试各种效果，试不坏的）：<br><img src="http://ww1.sinaimg.cn/large/006tNbRwgy1ffbz0qgu48j31kw0kgamd.jpg" alt=""></p>
 </li>
-<li><p>最后一步，在hexo所在文件夹里搜索blockquote（在atom里用’shift+command+F’快捷键搜索），css文件一般都在‘style.css’文件里，将对应的部分换成以下内容就行了：</p>
+<li><p>最后一步，在hexo所在文件夹里搜索blockquote（在atom里用’shift+command+F’快捷键搜索），css设置一般都在‘style.css’文件里，将对应的部分换成以下内容就行了：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.article-entry</span> <span class="selector-tag">blockquote</span> &#123;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">15px</span>;</div><div class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</div><div class="line">    <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="number">#ddd</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ol>
@@ -133,12 +133,12 @@
 <li>修改完后用手机浏览博客能够立刻正常显示，但在电脑上需要等一会儿才能显示正常，用‘localhost:4000’调试模式则一直不正常；</li>
 <li>修改hexo文件后要反复存几次才能生效，否则即使存盘后也会变回原来的设置。</li>
 </ul>
-<p>估计可能是hexo的问题，也可能是自己操作的问题，希望能尽快找到答案。</p>
+<p>估计可能是hexo的问题，也可能是自己操作的原因，希望能尽快找到答案。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/06/hexo_markdown_debug/" data-id="cj2d93ijg000d364776xxdj0b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/06/hexo_markdown_debug/" data-id="cj2dcrsrw00011047wocx9jd3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/debug/">debug</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
