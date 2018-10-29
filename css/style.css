@@ -595,6 +595,7 @@ a.article-title:hover {
 .article-entry ul,
 .article-entry ol,
 .article-entry dl {
+  padding: 0 15px;
   margin-top: 1.6em;
   margin-bottom: 1.6em;
 }
