@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>读书笔记 on 绿茶的自由之路</title>
+    <link>https://bruce-qiao.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 读书笔记 on 绿茶的自由之路</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://bruce-qiao.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《Atomic Habits》读书笔记</title>
+      <link>https://bruce-qiao.github.io/post/atomic-habits_note/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bruce-qiao.github.io/post/atomic-habits_note/</guid>
+      <description>《Atomic Habits》是一本介绍如何培养习惯的书。出版以后在国外影响很大，许多媒体、大V都推荐过。相反在国内除了樊登大力推荐外（国内翻</description>
+    </item>
+    <item>
+      <title>《会走路的钱》读书笔记</title>
+      <link>https://bruce-qiao.github.io/post/money-walks_note/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bruce-qiao.github.io/post/money-walks_note/</guid>
+      <description>《会走路的钱》是美籍华人贝版写的关于投资理财的书，书中记录了作者作为90年代从大陆移民美国的普通华人家庭十年时间（实际上超过了十年）资产从零</description>
+    </item>
+  </channel>
+</rss>

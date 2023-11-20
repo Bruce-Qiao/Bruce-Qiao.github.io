@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程 on 绿茶的自由之路</title>
+    <link>https://bruce-qiao.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on 绿茶的自由之路</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://bruce-qiao.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>今天你的人生报错了吗？</title>
+      <link>https://bruce-qiao.github.io/post/bug-and-debug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://bruce-qiao.github.io/post/bug-and-debug/</guid>
+      <description>程序报错了！ 初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。 尤其是在折腾了大半天仍然解</description>
+    </item>
+  </channel>
+</rss>
