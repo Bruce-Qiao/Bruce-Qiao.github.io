@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="绿茶的自由之路">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://bruce-qiao.github.io//img/blog_cover.jpeg">
+    <meta property="twitter:image" content="https://bruce-qiao.github.io//img/blog_cover.jpeg" />
+    
+
+    
+    <meta name="title" content="用Inspect功能修正hexo排版错误" />
+    <meta property="og:title" content="用Inspect功能修正hexo排版错误" />
+    <meta property="twitter:title" content="用Inspect功能修正hexo排版错误" />
+    
+
+    
+    <meta name="description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。">
+    <meta property="og:description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="bruceqiao, Bruce-Qiao, BruceQiao, 绿茶的自由之路, Bruce Qiao Blog, 博客, 个人网站, 互联网, Web">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>用Inspect功能修正hexo排版错误 | 绿茶的自由之路 | Bruce-Qiao Blog</title>
+
+    <link rel="canonical" href="/post/hexo-markdown-debug/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">绿茶的自由之路</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/">个人成长</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E6%8A%95%E8%B5%84/">投资</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/">编程</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes//">NOTES</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/blog_cover.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/hexo" title="hexo">
+                            hexo
+                        </a>
+                        
+                        <a class="tag" href="/tags/markdown" title="markdown">
+                            markdown
+                        </a>
+                        
+                        <a class="tag" href="/tags/debug" title="debug">
+                            debug
+                        </a>
+                        
+                    </div>
+                    <h1>用Inspect功能修正hexo排版错误</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    绿茶的自由之路
+                             
+                            on 
+                            Monday, January 1, 0001
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>前两周参考<a href="http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/">笑来老师文章</a>用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。</p>
+<p>写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常：</p>
+<p>
+  <img src="https://i.imgur.com/3gYkIOE.jpg" alt="Markdown Debug 1">
+
+</p>
+<p>但在浏览器里却显示有问题：</p>
+<p>
+  <img src="https://i.imgur.com/u63KkyK.jpg" alt="Markdown Debug 2">
+
+</p>
+<p>反复试了多次都是同样的问题，正在一筹莫展时，同样是受笑来老师博客里的<a href="http://lixiaolai.com/2016/06/25/makecs-html-css/">一篇文章</a>的启发最终解决了这个问题。</p>
+<p>谷歌chrome浏览器的Inspect功能对于发现和修正html/css问题非常有效。以上面的问题为例：</p>
+<ol>
+<li>在网页的有问题位置按鼠标右键，在弹出菜单里选择Inspect；</li>
+</ol>
+<p>
+  <img src="https://i.imgur.com/MTNKHmB.jpg" alt="Markdown Debug 3">
+
+</p>
+<ol start="2">
+<li>这时会弹出Inspect窗口。窗口左侧是网页的html文件内容，可以看到引用的部分是属于一个<code>blockquote</code>的class；</li>
+</ol>
+<p>
+  <img src="https://i.imgur.com/FWUqnhE.jpg" alt="Markdown Debug 4">
+
+</p>
+<ol start="3">
+<li>用鼠标点击这个class或者在右边窗口中输入blockquote，可以看到对应的css文件；</li>
+</ol>
+<p>
+  <img src="https://i.imgur.com/I41s74W.jpg" alt="Markdown Debug 5">
+
+</p>
+<ol start="4">
+<li>仔细看看这个文件就会发现这种格式显示的肯定不是引用的效果：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">article-entry</span> <span style="color:#ff79c6">blockquote</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">font-family</span>: Georgia, <span style="color:#f1fa8c">&#34;Times New Roman&#34;</span>, <span style="color:#ff79c6">serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">font-size</span>: <span style="color:#bd93f9">1.4</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">margin</span>: <span style="color:#bd93f9">1.6</span><span style="color:#8be9fd">em</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">text-align</span>: <span style="color:#ff79c6">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="5">
+<li>找一个能够正常显示引用的网页，同样用Inspect功能打开css文件，看看引用部分的css是怎么写的：</li>
+</ol>
+<p>
+  <img src="https://i.imgur.com/KQAgPm6.jpg" alt="Markdown Debug 6">
+
+</p>
+<ol start="6">
+<li>把css文件内容拷贝下来，粘贴到自己有问题网页的对应css文件中，发现网页可以正确显示引用了（可以随便试试各种效果，试不坏的）：</li>
+</ol>
+<p>
+  <img src="https://i.imgur.com/RaAxHlM.jpg" alt="Markdown Debug 7">
+
+</p>
+<ol start="7">
+<li>最后一步，在hexo所在文件夹里搜索blockquote（在atom里用&rsquo;shift+command+F&rsquo;快捷键搜索），css设置一般都在‘style.css’文件里，将对应的部分换成以下内容就行了：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">article-entry</span> <span style="color:#ff79c6">blockquote</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">padding</span>: <span style="color:#bd93f9">0</span> <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">color</span>: <span style="color:#bd93f9">#666</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">border-left</span>: <span style="color:#bd93f9">4</span><span style="color:#8be9fd">px</span> <span style="color:#ff79c6">solid</span> <span style="color:#bd93f9">#ddd</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="总结">总结</h3>
+<ul>
+<li>Inspect功能对于学习、发现和修正html/css问题非常方便、有效；</li>
+<li>对于html/css/javascript还是缺乏系统了解，需要尽快补上。</li>
+</ul>
+<h3 id="问题">问题</h3>
+<ul>
+<li>修改完后用手机浏览博客能够立刻正常显示，但在电脑上需要等一会儿才能显示正常，用‘localhost:4000’调试模式则一直不正常；</li>
+<li>修改hexo文件后要反复存几次才能生效，否则即使存盘后也会变回原来的设置。</li>
+</ul>
+<p>估计可能是hexo的问题，也可能是自己操作的原因，希望能尽快找到答案。</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/post/financialfreedom/" data-toggle="tooltip" data-placement="top" title="普通人如何实现财务自由">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%A6%82%E4%BD%95%E5%88%9B%E9%80%A0%E8%B4%A2%E5%AF%8C" title="如何创造财富">
+                            如何创造财富
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E6%8A%95%E8%B5%84" title="投资">
+                            投资
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E8%AE%A4%E7%9F%A5%E8%83%BD%E5%8A%9B" title="认知能力">
+                            认知能力
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0" title="读书笔记">
+                            读书笔记
+                        </a>
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:bruceq619@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    <li>
+                        <a href="https://twitter.com/bruceq_qiao?s=21&amp;t=TlH9ZIjDmTQdCcGKzjYBNw">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/img/wechat.JPG">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Bruce-Qiao">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="绿茶的自由之路" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 绿茶的自由之路 2023
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
