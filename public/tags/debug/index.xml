@@ -6,11 +6,12 @@
     <description>Recent content in debug on 绿茶的自由之路</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 06 May 2017 20:33:00 +0000</lastBuildDate>
     <atom:link href="https://bruce-qiao.github.io/tags/debug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用Inspect功能修正hexo排版错误</title>
       <link>https://bruce-qiao.github.io/post/hexo-markdown-debug/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 May 2017 20:33:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/hexo-markdown-debug/</guid>
       <description>前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧</description>
     </item>
