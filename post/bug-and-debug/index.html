@@ -26,6 +26,8 @@
     <meta property="twitter:description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。" />
     
 
+    <meta property="og:url" content="https://bruce-qiao.github.io/post/bug-and-debug/" />
+
     
     <meta property="twitter:card" content="summary" />
     
@@ -39,7 +41,7 @@
     <link rel="canonical" href="/post/bug-and-debug/">
 
     
-    
+
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -47,11 +49,13 @@
     <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
 
     
-    <link rel="stylesheet" href="/css/zanshang.css">
+    <link rel="stylesheet" href="/css/zanshang.min.css">
 
     
     <link rel="stylesheet" href="/css/font-awesome.all.min.css">
 
+    
+    
     
     
 
@@ -71,7 +75,6 @@
     
 
 </head>
-
 
 
 
@@ -112,12 +115,6 @@
                     
                     
 		    
-                        <li><a href="/archive//">ARCHIVE</a></li>
-                    
-                        <li><a href="/notes//">NOTES</a></li>
-                    
-                        <li><a href="/about//">ABOUT</a></li>
-                    
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
 		           </li>
@@ -187,16 +184,11 @@
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
-                            Posted by 
-                            
-                                Bruce Qiao
-                             
-                            on 
-                            Thursday, April 27, 2017
+                            Posted on April 27, 2017
                             
                             
                             
-                            
+                        
                     </span>
                 </div>
             </div>
@@ -221,7 +213,7 @@
                 <h2 id="程序报错了">程序报错了！</h2>
 <p>初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。</p>
 <p>
-  <img src="https://img.bruceqiao.com/file/8abe9662a2d6748e3344c.jpg" alt="程序报错">
+  <img src="https://i.imgur.com/2POyppX.jpg" alt="程序报错">
 
 </p>
 <p>尤其是在折腾了大半天仍然解决不了问题，或者遇到一直出错的情况，真想摔键盘、骂人！继而怀疑自己是不是适合学编程，严重的甚至因此放弃。</p>
@@ -270,6 +262,24 @@
 
                 
 
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/bruce-qiao.github.io\/post\/bug-and-debug\/',
+        pageTitle: '今天你的人生报错了吗？',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
 
 
             </div>
@@ -363,7 +373,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">                  
+                <ul class="list-inline text-center">
                     
                     <li>
                         <a href="mailto:bruceq619@gmail.com">
@@ -433,7 +443,8 @@
             
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; 绿茶的自由之路 2024
+                    Copyright &copy; 绿茶的自由之路 2025
+                    
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe
@@ -441,6 +452,7 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
+                    
                 </p>
             </div>
         </div>
@@ -514,7 +526,7 @@
             n = $(this).prop('tagName').toLowerCase();
             i = "#" + $(this).prop('id');
             t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
             l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);
         });
@@ -548,6 +560,7 @@
         });
     });
 </script>
+
 
 
 

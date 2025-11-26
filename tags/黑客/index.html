@@ -26,6 +26,8 @@
     <meta property="twitter:description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。" />
     
 
+    <meta property="og:url" content="https://bruce-qiao.github.io/tags/%E9%BB%91%E5%AE%A2/" />
+
     
     <meta property="twitter:card" content="summary" />
     
@@ -39,7 +41,7 @@
     <link rel="canonical" href="/tags/%E9%BB%91%E5%AE%A2/">
 
     
-    
+
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -47,11 +49,13 @@
     <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
 
     
-    <link rel="stylesheet" href="/css/zanshang.css">
+    <link rel="stylesheet" href="/css/zanshang.min.css">
 
     
     <link rel="stylesheet" href="/css/font-awesome.all.min.css">
 
+    
+    
     
     
 
@@ -71,7 +75,6 @@
     
 
 </head>
-
 
 
 
@@ -112,12 +115,6 @@
                     
                     
 		    
-                        <li><a href="/archive//">ARCHIVE</a></li>
-                    
-                        <li><a href="/notes//">NOTES</a></li>
-                    
-                        <li><a href="/about//">ABOUT</a></li>
-                    
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
 		           </li>
@@ -198,13 +195,13 @@
 	
         <div class="post-content-preview">
 	
-            这不是一篇原创文章，实际上是一篇读书笔记。这本书叫《黑客与画家》，作者是Paul Graham是一名知名程序员、创业者、硅谷著名的YC孵化器的
+            <p>这不是一篇原创文章，实际上是一篇读书笔记。这本书叫《黑客与画家》，作者是Paul Graham是一名知名程序员、创业者、硅谷著名的YC孵化器的创始人之一。“如何创造财富”是这本书的一篇文章，看完以后觉得很受启发，所以有了这篇读书笔记。</p>
        
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by Bruce Qiao on Sunday, April 23, 2017
+        Posted on April 23, 2017
         
         
     
@@ -359,6 +356,25 @@
     
     
     
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>LAST POSTS</h5>
+        <ul>
+        
+            <li><a href="/post/recommended-investment-books/">那些改变了我的投资书</a></li>
+        
+            <li><a href="/post/how-to-make-wealth3/">如何创造财富（三）</a></li>
+        
+            <li><a href="/post/2021recap/">2021年总结</a></li>
+        
+            <li><a href="/post/atomic-habits_note/">《Atomic Habits》读书笔记</a></li>
+        
+            <li><a href="/post/money-walks_note/">《会走路的钱》读书笔记</a></li>
+        
+        </ul>
+    </section>
+    
 </div>
 
 	</div>
@@ -372,7 +388,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">                  
+                <ul class="list-inline text-center">
                     
                     <li>
                         <a href="mailto:bruceq619@gmail.com">
@@ -442,7 +458,8 @@
             
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; 绿茶的自由之路 2024
+                    Copyright &copy; 绿茶的自由之路 2025
+                    
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe
@@ -450,6 +467,7 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
+                    
                 </p>
             </div>
         </div>
@@ -523,7 +541,7 @@
             n = $(this).prop('tagName').toLowerCase();
             i = "#" + $(this).prop('id');
             t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
             l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);
         });
@@ -557,6 +575,7 @@
         });
     });
 </script>
+
 
 
 

@@ -26,6 +26,8 @@
     <meta property="twitter:description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。" />
     
 
+    <meta property="og:url" content="https://bruce-qiao.github.io/post/money-walks_note/" />
+
     
     <meta property="twitter:card" content="summary" />
     
@@ -39,7 +41,7 @@
     <link rel="canonical" href="/post/money-walks_note/">
 
     
-    
+
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -47,11 +49,13 @@
     <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
 
     
-    <link rel="stylesheet" href="/css/zanshang.css">
+    <link rel="stylesheet" href="/css/zanshang.min.css">
 
     
     <link rel="stylesheet" href="/css/font-awesome.all.min.css">
 
+    
+    
     
     
 
@@ -71,7 +75,6 @@
     
 
 </head>
-
 
 
 
@@ -112,12 +115,6 @@
                     
                     
 		    
-                        <li><a href="/archive//">ARCHIVE</a></li>
-                    
-                        <li><a href="/notes//">NOTES</a></li>
-                    
-                        <li><a href="/about//">ABOUT</a></li>
-                    
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
 		           </li>
@@ -187,16 +184,11 @@
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
-                            Posted by 
-                            
-                                Bruce Qiao
-                             
-                            on 
-                            Thursday, July 9, 2020
+                            Posted on July 9, 2020
                             
                             
                             
-                            
+                        
                     </span>
                 </div>
             </div>
@@ -343,6 +335,24 @@
 
 
 
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/bruce-qiao.github.io\/post\/money-walks_note\/',
+        pageTitle: '《会走路的钱》读书笔记',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
+
+
             </div>
 
             
@@ -434,7 +444,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">                  
+                <ul class="list-inline text-center">
                     
                     <li>
                         <a href="mailto:bruceq619@gmail.com">
@@ -504,7 +514,8 @@
             
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; 绿茶的自由之路 2024
+                    Copyright &copy; 绿茶的自由之路 2025
+                    
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe
@@ -512,6 +523,7 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
+                    
                 </p>
             </div>
         </div>
@@ -585,7 +597,7 @@
             n = $(this).prop('tagName').toLowerCase();
             i = "#" + $(this).prop('id');
             t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
             l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);
         });
@@ -619,6 +631,7 @@
         });
     });
 </script>
+
 
 
 

@@ -26,6 +26,8 @@
     <meta property="twitter:description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。" />
     
 
+    <meta property="og:url" content="https://bruce-qiao.github.io/post/2021recap/" />
+
     
     <meta property="twitter:card" content="summary" />
     
@@ -39,7 +41,7 @@
     <link rel="canonical" href="/post/2021recap/">
 
     
-    
+
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -47,11 +49,13 @@
     <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
 
     
-    <link rel="stylesheet" href="/css/zanshang.css">
+    <link rel="stylesheet" href="/css/zanshang.min.css">
 
     
     <link rel="stylesheet" href="/css/font-awesome.all.min.css">
 
+    
+    
     
     
 
@@ -71,7 +75,6 @@
     
 
 </head>
-
 
 
 
@@ -112,12 +115,6 @@
                     
                     
 		    
-                        <li><a href="/archive//">ARCHIVE</a></li>
-                    
-                        <li><a href="/notes//">NOTES</a></li>
-                    
-                        <li><a href="/about//">ABOUT</a></li>
-                    
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
 		           </li>
@@ -183,16 +180,11 @@
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
-                            Posted by 
-                            
-                                Bruce Qiao
-                             
-                            on 
-                            Thursday, February 17, 2022
+                            Posted on February 17, 2022
                             
                             
                             
-                            
+                        
                     </span>
                 </div>
             </div>
@@ -233,7 +225,7 @@
 </blockquote>
 <p>投资成功、认知升级以及掌握任何一项复杂的技能的过程都符合下面的复利曲线，都要经历一段漫长、难熬的积累期，绝大多数人在这个时期就早早放弃了，而一旦熬过了这个阶段就会迎来加速增长。</p>
 <p>
-  <img src="https://img.bruceqiao.com/file/de56fcd2a2b593aef1160.jpg" alt="指数增长曲线">
+  <img src="https://i.imgur.com/5o9XWbL.jpg" alt="指数增长曲线">
 
 </p>
 <p>提升认知的好处之一是让你能够看到别人看不到的事并因此采取行动。<a href="https://bruce-qiao.github.io/post/reborn-anniversary/">总之，这本书极大地改变了我。</a>好像一夜之间我变得不再焦虑，对未来也没有那么恐惧。之后受笑来老师的影响开始学习英语、编程以及后来的区块链，开始了自己的积累之路。</p>
@@ -274,6 +266,24 @@
 
                 
 
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/bruce-qiao.github.io\/post\/2021recap\/',
+        pageTitle: '2021年总结',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
 
 
             </div>
@@ -367,7 +377,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">                  
+                <ul class="list-inline text-center">
                     
                     <li>
                         <a href="mailto:bruceq619@gmail.com">
@@ -437,7 +447,8 @@
             
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; 绿茶的自由之路 2024
+                    Copyright &copy; 绿茶的自由之路 2025
+                    
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe
@@ -445,6 +456,7 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
+                    
                 </p>
             </div>
         </div>
@@ -518,7 +530,7 @@
             n = $(this).prop('tagName').toLowerCase();
             i = "#" + $(this).prop('id');
             t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
             l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);
         });
@@ -552,6 +564,7 @@
         });
     });
 </script>
+
 
 
 

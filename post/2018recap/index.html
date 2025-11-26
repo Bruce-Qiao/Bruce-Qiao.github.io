@@ -26,6 +26,8 @@
     <meta property="twitter:description" content="Bruce Qiao，终身学习者 | 这里是绿茶的自由之路，与你一起发现更大的世界。" />
     
 
+    <meta property="og:url" content="https://bruce-qiao.github.io/post/2018recap/" />
+
     
     <meta property="twitter:card" content="summary" />
     
@@ -39,7 +41,7 @@
     <link rel="canonical" href="/post/2018recap/">
 
     
-    
+
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -47,11 +49,13 @@
     <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
 
     
-    <link rel="stylesheet" href="/css/zanshang.css">
+    <link rel="stylesheet" href="/css/zanshang.min.css">
 
     
     <link rel="stylesheet" href="/css/font-awesome.all.min.css">
 
+    
+    
     
     
 
@@ -71,7 +75,6 @@
     
 
 </head>
-
 
 
 
@@ -112,12 +115,6 @@
                     
                     
 		    
-                        <li><a href="/archive//">ARCHIVE</a></li>
-                    
-                        <li><a href="/notes//">NOTES</a></li>
-                    
-                        <li><a href="/about//">ABOUT</a></li>
-                    
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
 		           </li>
@@ -183,16 +180,11 @@
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
-                            Posted by 
-                            
-                                Bruce Qiao
-                             
-                            on 
-                            Wednesday, January 2, 2019
+                            Posted on January 2, 2019
                             
                             
                             
-                            
+                        
                     </span>
                 </div>
             </div>
@@ -224,7 +216,7 @@
 <h3 id="投资">投资</h3>
 <p>单从结果看2018年的投资业绩非常不好，可能是我开始投资以来唯一亏损的一年。可是经过复盘发现在过去一年并没有重大的决策失误。亏损的原因首先是大势的原因，下图很具有说服力：</p>
 <p>
-  <img src="https://img.bruceqiao.com/file/db671f9261e3383431a67.jpg" alt="2018年各类资产收益率">
+  <img src="https://i.imgur.com/GwjsBOz.jpg" alt="2018年各类资产收益率">
 
 </p>
 <p>A股虽然排在资产收益率倒数第二名，但由于我之前一直判断国内股市估值过高，目前的仓位都是2015年股灾后建立的，选取的标的也都是低市盈率、高分红的蓝筹股，反而在去年没有损失。</p>
@@ -237,7 +229,7 @@
 <p>去年系统学习的第二个方面是编程，具体学习的语言是JavaScript，同样为了学习编程看了相关的三本英文书。</p>
 <p>在学习编程的过程中，发现Youtube上有非常多的学习资源，如果你对一个概念不清楚，在上面可以找到各种从不同角度的解释，多看几个就明白了，可以说互联网大大提升了学习的效率和效果。</p>
 <p>
-  <img src="https://img.bruceqiao.com/file/127562064ab4e60bbe260.jpg" alt="Youtube教程">
+  <img src="https://i.imgur.com/MjVSeEP.jpg" alt="Youtube教程">
 
 </p>
 <p>当然目前Youtube上的内容主要以英文为主，要想利用这一工具的前提是英语要过关。但就像刚才讲的：</p>
@@ -279,6 +271,24 @@
 
                 
 
+
+
+
+<link href="https://xxx.xxx.com/dist/Artalk.css" rel="stylesheet" />
+<script src="https://xxx.xxx.com/dist/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/bruce-qiao.github.io\/post\/2018recap\/',
+        pageTitle: '2018年总结',
+        server: 'https:\/\/xxx.xxx.com',
+        site: 'xxx blog',
+    })
+</script>
 
 
             </div>
@@ -372,7 +382,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">                  
+                <ul class="list-inline text-center">
                     
                     <li>
                         <a href="mailto:bruceq619@gmail.com">
@@ -442,7 +452,8 @@
             
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; 绿茶的自由之路 2024
+                    Copyright &copy; 绿茶的自由之路 2025
+                    
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe
@@ -450,6 +461,7 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
+                    
                 </p>
             </div>
         </div>
@@ -523,7 +535,7 @@
             n = $(this).prop('tagName').toLowerCase();
             i = "#" + $(this).prop('id');
             t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            c = $('<a href="' + i + '" rel="nofollow" title="' + t + '">' + t + '</a>');
             l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);
         });
@@ -557,6 +569,7 @@
         });
     });
 </script>
+
 
 
 

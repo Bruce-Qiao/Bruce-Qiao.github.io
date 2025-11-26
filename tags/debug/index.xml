@@ -13,7 +13,7 @@
       <link>https://bruce-qiao.github.io/post/hexo-markdown-debug/</link>
       <pubDate>Sat, 06 May 2017 20:33:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/hexo-markdown-debug/</guid>
-      <description>前两周参考笑来老师文章用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧</description>
+      <description>&lt;p&gt;前两周参考&lt;a href=&#34;http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/&#34;&gt;笑来老师文章&lt;/a&gt;用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。&lt;/p&gt;&#xA;&lt;p&gt;写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常：&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://i.imgur.com/3gYkIOE.jpg&#34; alt=&#34;Markdown Debug 1&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;但在浏览器里却显示有问题：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
