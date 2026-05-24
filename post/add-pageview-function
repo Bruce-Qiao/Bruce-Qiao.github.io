@@ -12,7 +12,7 @@ tags:
 在销售网站发布了新产品后，我们都希望了解用户对于新产品的感兴趣程度。除了添加收藏功能之外，还有一个方法是统计浏览该产品页面的次数。全栈营编程比赛的页面就有这一功能：
 ​
 ​
-![views功能实现.png](http://user-image.logdown.io/user/22238/blog/21249/post/1510967/8aTzay8uT1GGsghuJx81_views%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0.png)
+![views功能实现.png](https://pic.bruceqiao.com/i/2026/05/24/views功能实现.png)
 ​
 用google搜了一下解决方案，大部分都是要用到"impressionist"这个gem。这种方法功能强大（可以按照不同id统计），但实现起来比较麻烦。
 ​
@@ -63,7 +63,7 @@ end
 ​
 最终效果如下：
 ​
-![views功能实现1.png](http://user-image.logdown.io/user/22238/blog/21249/post/1510967/MtHCAsxQZ6jxKOsvo8WG_views%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B01.png)
+![views功能实现1.png](https://pic.bruceqiao.com/i/2026/05/24/views功能实现1.png)
 ​
 【提示：】这种方法实现比较简单，但不能按照用户id区分，也就是说自己的每次浏览都会被统计进去。如果想要实现区分用户的统计，推荐还是用"impressionist"这个gem，能够实现的功能较多。
 ​

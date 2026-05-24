@@ -6,8 +6,15 @@
     <description>Recent content in Posts on 绿茶的自由之路</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Feb 2024 20:36:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bruce-qiao.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>价值投资 3.0</title>
+      <link>https://bruce-qiao.github.io/post/invest-in-digital-world/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://bruce-qiao.github.io/post/invest-in-digital-world/</guid>
+      <description>&lt;p&gt;这是一篇读书笔记，书名就叫做《价值投资 3.0》。个人认为这是一本被低估了的好书，以下是我阅读本书的一些收获和体会。&lt;/p&gt;&#xA;&lt;h3 id=&#34;为什么在数字时代投资很重要&#34;&gt;为什么在数字时代投资很重要&lt;/h3&gt;&#xA;&lt;p&gt;这本书的英文原版名叫做《Where the money is: Value investing in the digital age》，直译过来就是《钱在哪里：在数字时代的价值投资》。为什么在数字时代投资很重要，答案就在书名里：因为钱就在那里。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>那些改变了我的投资书</title>
       <link>https://bruce-qiao.github.io/post/recommended-investment-books/</link>
@@ -90,21 +97,21 @@
       <link>https://bruce-qiao.github.io/post/learning-how-to-learn/</link>
       <pubDate>Tue, 09 May 2017 15:53:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/learning-how-to-learn/</guid>
-      <description>&lt;p&gt;这是一篇读书笔记，书名叫做《a mind for numbers》，国内译作《学习之道》，是我读完的第六本英文原版书。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://i.imgur.com/hx9iYD7.jpg&#34; alt=&#34;《学习之道》&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;最早听到这本书是在Xdite老师的元学习课上，Xdite老师的元学习理论借鉴了这本书的一些方法。当时就去听了作者在Ted上的一个演讲，感觉理论很新颖，后来就忙着学编程去了。直到最近编程学习告一段落，自己通过全栈营的学习对元学习理论有了进一步的认识，觉得有必要更加深入地了解理论背后更多的内容，于是认真地读了一遍这本书。&lt;/p&gt;</description>
+      <description>&lt;p&gt;这是一篇读书笔记，书名叫做《a mind for numbers》，国内译作《学习之道》，是我读完的第六本英文原版书。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%e5%ad%a6%e4%b9%a0%e4%b9%8b%e9%81%93.jpg&#34; alt=&#34;《学习之道》&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;最早听到这本书是在Xdite老师的元学习课上，Xdite老师的元学习理论借鉴了这本书的一些方法。当时就去听了作者在Ted上的一个演讲，感觉理论很新颖，后来就忙着学编程去了。直到最近编程学习告一段落，自己通过全栈营的学习对元学习理论有了进一步的认识，觉得有必要更加深入地了解理论背后更多的内容，于是认真地读了一遍这本书。&lt;/p&gt;</description>
     </item>
     <item>
       <title>用Inspect功能修正hexo排版错误</title>
       <link>https://bruce-qiao.github.io/post/hexo-markdown-debug/</link>
       <pubDate>Sat, 06 May 2017 20:33:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/hexo-markdown-debug/</guid>
-      <description>&lt;p&gt;前两周参考&lt;a href=&#34;http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/&#34;&gt;笑来老师文章&lt;/a&gt;用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。&lt;/p&gt;&#xA;&lt;p&gt;写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常：&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://i.imgur.com/3gYkIOE.jpg&#34; alt=&#34;Markdown Debug 1&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;但在浏览器里却显示有问题：&lt;/p&gt;</description>
+      <description>&lt;p&gt;前两周参考&lt;a href=&#34;http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/&#34;&gt;笑来老师文章&lt;/a&gt;用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。&lt;/p&gt;&#xA;&lt;p&gt;写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常：&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://pic.bruceqiao.com/i/2026/05/24/Markdown-Debug-1.jpg&#34; alt=&#34;Markdown Debug 1&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;但在浏览器里却显示有问题：&lt;/p&gt;</description>
     </item>
     <item>
       <title>今天你的人生报错了吗？</title>
       <link>https://bruce-qiao.github.io/post/bug-and-debug/</link>
       <pubDate>Thu, 27 Apr 2017 16:11:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/bug-and-debug/</guid>
-      <description>&lt;h2 id=&#34;程序报错了&#34;&gt;程序报错了！&lt;/h2&gt;&#xA;&lt;p&gt;初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://i.imgur.com/2POyppX.jpg&#34; alt=&#34;程序报错&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;尤其是在折腾了大半天仍然解决不了问题，或者遇到一直出错的情况，真想摔键盘、骂人！继而怀疑自己是不是适合学编程，严重的甚至因此放弃。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;程序报错了&#34;&gt;程序报错了！&lt;/h2&gt;&#xA;&lt;p&gt;初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%e7%a8%8b%e5%ba%8f%e6%8a%a5%e9%94%99.jpg&#34; alt=&#34;程序报错&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;尤其是在折腾了大半天仍然解决不了问题，或者遇到一直出错的情况，真想摔键盘、骂人！继而怀疑自己是不是适合学编程，严重的甚至因此放弃。&lt;/p&gt;</description>
     </item>
     <item>
       <title>如何创造财富</title>
