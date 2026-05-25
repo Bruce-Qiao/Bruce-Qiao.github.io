@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>编程 on 绿茶的自由之路</title>
     <link>https://bruce-qiao.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
     <description>Recent content in 编程 on 绿茶的自由之路</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Thu, 27 Apr 2017 16:11:00 +0000</lastBuildDate>
     <atom:link href="https://bruce-qiao.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,10 @@
       <link>https://bruce-qiao.github.io/post/bug-and-debug/</link>
       <pubDate>Thu, 27 Apr 2017 16:11:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/bug-and-debug/</guid>
-      <description>&lt;h2 id=&#34;程序报错了&#34;&gt;程序报错了！&lt;/h2&gt;&#xA;&lt;p&gt;初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%e7%a8%8b%e5%ba%8f%e6%8a%a5%e9%94%99.jpg&#34; alt=&#34;程序报错&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;尤其是在折腾了大半天仍然解决不了问题，或者遇到一直出错的情况，真想摔键盘、骂人！继而怀疑自己是不是适合学编程，严重的甚至因此放弃。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;程序报错了&#34;&gt;程序报错了！&lt;/h2&gt;
+&lt;p&gt;初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;程序报错&#34; loading=&#34;lazy&#34; src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%E7%A8%8B%E5%BA%8F%E6%8A%A5%E9%94%99.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;尤其是在折腾了大半天仍然解决不了问题，或者遇到一直出错的情况，真想摔键盘、骂人！继而怀疑自己是不是适合学编程，严重的甚至因此放弃。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Debug on 绿茶的自由之路</title>
     <link>https://bruce-qiao.github.io/tags/debug/</link>
     <description>Recent content in Debug on 绿茶的自由之路</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Sat, 06 May 2017 20:33:00 +0000</lastBuildDate>
     <atom:link href="https://bruce-qiao.github.io/tags/debug/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,10 @@
       <link>https://bruce-qiao.github.io/post/hexo-markdown-debug/</link>
       <pubDate>Sat, 06 May 2017 20:33:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/hexo-markdown-debug/</guid>
-      <description>&lt;p&gt;前两周参考&lt;a href=&#34;http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/&#34;&gt;笑来老师文章&lt;/a&gt;用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。&lt;/p&gt;&#xA;&lt;p&gt;写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常：&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://pic.bruceqiao.com/i/2026/05/24/Markdown-Debug-1.jpg&#34; alt=&#34;Markdown Debug 1&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;但在浏览器里却显示有问题：&lt;/p&gt;</description>
+      <description>&lt;p&gt;前两周参考&lt;a href=&#34;http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/&#34;&gt;笑来老师文章&lt;/a&gt;用hexo建了一个静态博客站点，准备正式开始练习写作（顺便说一下笑来老师的这个博客有很多学习编程的心得、实用知识和技巧，非常值得看看）。&lt;/p&gt;
+&lt;p&gt;写作过程中发现hexo中对markdown语法的支持有些问题。例如使用引用语法的时候，在atom里模拟显示正常：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Markdown Debug 1&#34; loading=&#34;lazy&#34; src=&#34;https://pic.bruceqiao.com/i/2026/05/24/Markdown-Debug-1.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但在浏览器里却显示有问题：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

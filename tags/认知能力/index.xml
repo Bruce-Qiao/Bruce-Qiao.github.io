@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>认知能力 on 绿茶的自由之路</title>
     <link>https://bruce-qiao.github.io/tags/%E8%AE%A4%E7%9F%A5%E8%83%BD%E5%8A%9B/</link>
     <description>Recent content in 认知能力 on 绿茶的自由之路</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 03 Jan 2023 09:23:00 +0000</lastBuildDate>
     <atom:link href="https://bruce-qiao.github.io/tags/%E8%AE%A4%E7%9F%A5%E8%83%BD%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,14 +13,15 @@
       <link>https://bruce-qiao.github.io/post/how-to-make-wealth3/</link>
       <pubDate>Tue, 03 Jan 2023 09:23:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/how-to-make-wealth3/</guid>
-      <description>&lt;p&gt;这篇文章是&lt;a href=&#34;https://bruce-qiao.github.io/tags/%E5%A6%82%E4%BD%95%E5%88%9B%E9%80%A0%E8%B4%A2%E5%AF%8C/&#34;&gt;如何创造财富&lt;/a&gt;系列文章的第三篇。&lt;/p&gt;&#xA;&lt;p&gt;在开始之前先来回顾一下前两篇文章。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bruce-qiao.github.io/post/how-to-make-wealth/&#34;&gt;第一篇&lt;/a&gt;是从创业的角度。创业者创造财富有两种途径：第一种是利用创业者本人和创业团队的劳动力和时间，第二种是利用独有的技术优势。这两种途径本质上都是利用了杠杆，第一种是劳动力杠杆，这也是最古老、最原始的杠杆；第二种是技术杠杆，这点在互联网时代体现的最明显，好的代码（包括书籍、媒体等）复制的边际成本为零，你可以很轻松地将你的劳动成果放大成百上千倍。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bruce-qiao.github.io/post/how-to-make-wealth2/&#34;&gt;第二篇&lt;/a&gt;是从投资的角度。除了劳动力杠杆和技术杠杆之外，20世纪应用最广的应该就是资本杠杆了。可是普通人很难获得资本杠杆，因此文章介绍了期权这样的具有不对称性的杠杆工具，如果运用得当，可以获得惊人的财富增长。&lt;/p&gt;&#xA;&lt;p&gt;在&lt;a href=&#34;https://bruce-qiao.github.io/post/how-to-make-wealth2/&#34;&gt;上一篇&lt;/a&gt;文章的最后我写了这样一句话：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;实际上对于普通人来说，投资于自己知识和能力的提升是投资回报率最高的投资。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;这无疑是一句正确的废话。提升自己的知识和能力在任何时候、任何条件下都是对的，可它和我们之前说的杠杆有什么联系？为什么说它是投资回报率最高的投资？&lt;/p&gt;</description>
+      <description>杠杆是判断力的倍增器。</description>
     </item>
     <item>
       <title>2021年总结</title>
       <link>https://bruce-qiao.github.io/post/2021recap/</link>
       <pubDate>Thu, 17 Feb 2022 10:26:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/2021recap/</guid>
-      <description>&lt;p&gt;由于懒以及拖延症的原因，去年没有写总结。&lt;/p&gt;&#xA;&lt;p&gt;由于同样的原因，今年的总结被拖到现在。但2021年的总结无论如何必须要写，因为2021年是我辞职在家的第七年，按照笑来老师“七年就是一辈子”的说法，我刚刚过完上一辈子，所以这是一篇上一辈子的总结。&lt;/p&gt;</description>
+      <description>&lt;p&gt;由于懒以及拖延症的原因，去年没有写总结。&lt;/p&gt;
+&lt;p&gt;由于同样的原因，今年的总结被拖到现在。但2021年的总结无论如何必须要写，因为2021年是我辞职在家的第七年，按照笑来老师“七年就是一辈子”的说法，我刚刚过完上一辈子，所以这是一篇上一辈子的总结。&lt;/p&gt;</description>
     </item>
     <item>
       <title>《Atomic Habits》读书笔记</title>
@@ -62,35 +63,45 @@
       <link>https://bruce-qiao.github.io/post/how-to-make-wealth2/</link>
       <pubDate>Sun, 03 Sep 2017 21:48:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/how-to-make-wealth2/</guid>
-      <description>&lt;p&gt;在&lt;a href=&#34;https://bruce-qiao.github.io/post/how-to-make-wealth/&#34;&gt;如何创造财富&lt;/a&gt;这篇文章里介绍了Paul Graham的观点，主要是讲如何通过创业创造财富。今天聊聊如何通过投资达到财富快速增长的目标。&lt;/p&gt;&#xA;&lt;p&gt;学过财务分析的应该很熟悉经典的杜邦公式：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;净资产收益率(ROE) = 净利率 × 周转率 × 杠杆率&lt;/p&gt;</description>
+      <description>&lt;p&gt;在&lt;a href=&#34;https://bruce-qiao.github.io/post/how-to-make-wealth/&#34;&gt;如何创造财富&lt;/a&gt;这篇文章里介绍了Paul Graham的观点，主要是讲如何通过创业创造财富。今天聊聊如何通过投资达到财富快速增长的目标。&lt;/p&gt;
+&lt;p&gt;学过财务分析的应该很熟悉经典的杜邦公式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;净资产收益率(ROE) = 净利率 × 周转率 × 杠杆率&lt;/p&gt;</description>
     </item>
     <item>
       <title>人工智能——下一个风口</title>
       <link>https://bruce-qiao.github.io/post/ai-age/</link>
       <pubDate>Sat, 27 May 2017 16:51:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/ai-age/</guid>
-      <description>&lt;p&gt;前两天围棋人机大战结束，阿尔法狗以3:0完胜目前等级分排名世界第一的柯洁。相信最近围绕这一话题媒体和舆论又会热闹一阵子。&lt;/p&gt;&#xA;&lt;p&gt;其实在比赛前了解人工智能的专家早就预料到了结果，我怀疑柯洁本人也知道，只是希望借此次比赛让更多的人关注围棋（据说阿尔法狗战胜李世石后韩国学习围棋的人增加了不少）。不管怎么说，人工智能在人类最复杂的棋类运动中完胜，标志着人工智能的发展进入一个新的阶段。不管你愿不愿意，人工智能今后都会成为一个无法逃避的话题。&lt;/p&gt;</description>
+      <description>&lt;p&gt;前两天围棋人机大战结束，阿尔法狗以3:0完胜目前等级分排名世界第一的柯洁。相信最近围绕这一话题媒体和舆论又会热闹一阵子。&lt;/p&gt;
+&lt;p&gt;其实在比赛前了解人工智能的专家早就预料到了结果，我怀疑柯洁本人也知道，只是希望借此次比赛让更多的人关注围棋（据说阿尔法狗战胜李世石后韩国学习围棋的人增加了不少）。不管怎么说，人工智能在人类最复杂的棋类运动中完胜，标志着人工智能的发展进入一个新的阶段。不管你愿不愿意，人工智能今后都会成为一个无法逃避的话题。&lt;/p&gt;</description>
     </item>
     <item>
       <title>新生周年纪</title>
       <link>https://bruce-qiao.github.io/post/reborn-anniversary/</link>
       <pubDate>Tue, 16 May 2017 19:46:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/reborn-anniversary/</guid>
-      <description>&lt;p&gt;前一阵收到新生大学的续费通知，才突然意识到自己加入新生大学社群已经有一年时间了。&lt;/p&gt;&#xA;&lt;p&gt;人生如白驹过隙，一年的时间转瞬即逝。然而在过去的短短一年时间里我有了非常大的变化：&lt;/p&gt;</description>
+      <description>&lt;p&gt;前一阵收到新生大学的续费通知，才突然意识到自己加入新生大学社群已经有一年时间了。&lt;/p&gt;
+&lt;p&gt;人生如白驹过隙，一年的时间转瞬即逝。然而在过去的短短一年时间里我有了非常大的变化：&lt;/p&gt;</description>
     </item>
     <item>
       <title>学习如何学习</title>
       <link>https://bruce-qiao.github.io/post/learning-how-to-learn/</link>
       <pubDate>Tue, 09 May 2017 15:53:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/learning-how-to-learn/</guid>
-      <description>&lt;p&gt;这是一篇读书笔记，书名叫做《a mind for numbers》，国内译作《学习之道》，是我读完的第六本英文原版书。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%e5%ad%a6%e4%b9%a0%e4%b9%8b%e9%81%93.jpg&#34; alt=&#34;《学习之道》&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;最早听到这本书是在Xdite老师的元学习课上，Xdite老师的元学习理论借鉴了这本书的一些方法。当时就去听了作者在Ted上的一个演讲，感觉理论很新颖，后来就忙着学编程去了。直到最近编程学习告一段落，自己通过全栈营的学习对元学习理论有了进一步的认识，觉得有必要更加深入地了解理论背后更多的内容，于是认真地读了一遍这本书。&lt;/p&gt;</description>
+      <description>&lt;p&gt;这是一篇读书笔记，书名叫做《a mind for numbers》，国内译作《学习之道》，是我读完的第六本英文原版书。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;《学习之道》&#34; loading=&#34;lazy&#34; src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E9%81%93.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;最早听到这本书是在Xdite老师的元学习课上，Xdite老师的元学习理论借鉴了这本书的一些方法。当时就去听了作者在Ted上的一个演讲，感觉理论很新颖，后来就忙着学编程去了。直到最近编程学习告一段落，自己通过全栈营的学习对元学习理论有了进一步的认识，觉得有必要更加深入地了解理论背后更多的内容，于是认真地读了一遍这本书。&lt;/p&gt;</description>
     </item>
     <item>
       <title>今天你的人生报错了吗？</title>
       <link>https://bruce-qiao.github.io/post/bug-and-debug/</link>
       <pubDate>Thu, 27 Apr 2017 16:11:00 +0000</pubDate>
       <guid>https://bruce-qiao.github.io/post/bug-and-debug/</guid>
-      <description>&lt;h2 id=&#34;程序报错了&#34;&gt;程序报错了！&lt;/h2&gt;&#xA;&lt;p&gt;初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%e7%a8%8b%e5%ba%8f%e6%8a%a5%e9%94%99.jpg&#34; alt=&#34;程序报错&#34;&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;尤其是在折腾了大半天仍然解决不了问题，或者遇到一直出错的情况，真想摔键盘、骂人！继而怀疑自己是不是适合学编程，严重的甚至因此放弃。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;程序报错了&#34;&gt;程序报错了！&lt;/h2&gt;
+&lt;p&gt;初学编程者最大的噩梦就是遇到程序报错，辛苦半天敲完一行行代码，满怀期望地按下运行键等来的却是满屏红字。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;程序报错&#34; loading=&#34;lazy&#34; src=&#34;https://pic.bruceqiao.com/i/2026/05/24/%E7%A8%8B%E5%BA%8F%E6%8A%A5%E9%94%99.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;尤其是在折腾了大半天仍然解决不了问题，或者遇到一直出错的情况，真想摔键盘、骂人！继而怀疑自己是不是适合学编程，严重的甚至因此放弃。&lt;/p&gt;</description>
     </item>
     <item>
       <title>如何创造财富</title>
